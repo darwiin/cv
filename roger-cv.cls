@@ -138,7 +138,7 @@
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[5]{%
-  \parbox[t]{2cm}{#1\\#2} & \parbox[t]{11.8cm}{\textbf{#3}\hfill{\footnotesize\addfontfeature{Color=lightgray} #4}\\%
+  \parbox[t]{3cm}{#1\\#2} & \parbox[t]{11.5cm}{\textbf{#3}\hfill{\footnotesize\addfontfeature{Color=lightgray} #4}\\%
        #5\vspace{\parsep}%
   }\tabularnewline
 }
