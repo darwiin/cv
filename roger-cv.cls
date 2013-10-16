@@ -1,4 +1,4 @@
-\ProvidesClass{friggeri-cv}[2012/04/30 CV class]
+\ProvidesClass{roger-cv}[2012/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 
 \DeclareOption{print}{\def\@cv@print{}}
@@ -129,12 +129,13 @@
 %%%%%%%%%%%%%%%%%%%%
 % List environment %
 %%%%%%%%%%%%%%%%%%%%
+\RequirePackage{tabularx}
 
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \tabularx{\linewidth}{r l}
 }{%
-  \end{tabular*}
+  \endtabularx
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[5]{%
@@ -156,7 +157,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{4}(1.5, 4.33)
+  \begin{textblock}{3.8}(1.5, 4.33)
   \begin{flushright}
   \obeycr
 }{%
