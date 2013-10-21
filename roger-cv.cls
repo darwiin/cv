@@ -145,6 +145,18 @@
 }
 
 
+\setlength{\tabcolsep}{0pt}
+\newenvironment{competenceslist}{%
+  \tabularx{\linewidth}{r l}
+}{%
+  \endtabularx
+}
+\renewcommand{\bfseries}{\headingfont\color{headercolor}}
+\newcommand{\competence}[2]{%
+  \parbox[t]{3cm}{\textbf{#1}} & \parbox[t]{11.5cm}{#2\vspace{\parsep}%
+  }\tabularnewline
+}
+
 %%%%%%%%%%%%%%
 % Side block %
 %%%%%%%%%%%%%%
